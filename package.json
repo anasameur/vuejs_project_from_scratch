@@ -4,7 +4,8 @@
   "description": "a vuejs project from scratch using webpack 4",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config build/webpack.config.dev.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,10 @@
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
+    "css-loader": "^1.0.0",
+    "vue-loader": "^15.4.2",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.5.17",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2"
   }
