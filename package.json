@@ -1,0 +1,27 @@
+{
+  "name": "vuejs_project_from_scratch",
+  "version": "1.0.0",
+  "description": "a vuejs project from scratch using webpack 4",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anasameur/vuejs_project_from_scratch.git"
+  },
+  "author": "Anas AMEUR",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anasameur/vuejs_project_from_scratch/issues"
+  },
+  "homepage": "https://github.com/anasameur/vuejs_project_from_scratch#readme",
+  "dependencies": {
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  }
+}
