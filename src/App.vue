@@ -1,6 +1,6 @@
 <template>
     <div class="full-width center-content">
-        <hello-component name="Anas" />
+        <hello-component name="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb" />
     </div>
 </template>
 
