@@ -1,6 +1,6 @@
 <template>
     <div class="full-width center-content">
-        <hello-component name="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb" />
+        <hello-component name="jenkins are awesome" />
     </div>
 </template>
 
