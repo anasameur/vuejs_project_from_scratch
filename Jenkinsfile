@@ -2,7 +2,7 @@ pipeline {
   
   agent any
   stages {
-    stage('Information') {
+    stage('Informations') {
       steps {
         bat 'node -v'
         bat 'npm -v'
