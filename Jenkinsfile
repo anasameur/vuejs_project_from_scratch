@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Informations') {
       steps {
-        bat 'node -v'
+        node '-v'
         bat 'npm -v'
       }
     }
@@ -14,6 +14,13 @@ pipeline {
         bat 'npm install'
       }
     }
+
+    stage('Test') {
+      steps {
+        bat 'npm run lint'
+      }
+    }
+
 
     stage('Build') {
       steps {
