@@ -1,10 +1,12 @@
 pipeline {
   
   agent any
+  tools {nodejs “node”}
+
   stages {
     stage('Informations') {
       steps {
-        node -v
+        bat 'node -v'
         bat 'npm -v'
       }
     }
