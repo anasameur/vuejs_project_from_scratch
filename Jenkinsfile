@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Informations') {
       steps {
-        node '-v'
+        node -v
         bat 'npm -v'
       }
     }
