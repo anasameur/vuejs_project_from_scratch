@@ -25,7 +25,7 @@ pipeline {
   }
    post {
       always {
-        archiveArtifacts artifacts: 'dist/*', fingerprint: true
+        archive artifacts: 'dist/*', fingerprint: true
       }
    }
 }
