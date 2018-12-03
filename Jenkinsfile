@@ -17,17 +17,16 @@ pipeline {
       }
     }
 
-    stage('Test') {
-      steps {
-        bat 'npm run lint'
-      }
-    }
-
-
     stage('Build') {
       steps {
         bat 'npm run build'
       }
     }   
   }
+   post {
+      always {
+        archiveArtifacts artifacts: 'build/libs/**/*.jar', fingerprint: true
+        junit 'build/reports/**/*.xml'
+      }
+   }
 }
