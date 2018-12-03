@@ -26,7 +26,7 @@ pipeline {
     stage ('push artifact') {
        steps {
          zip zipFile: 'artefacts/dist.zip', archive: false, dir: 'dist'
-         archiveArtifacts artifacts: 'dist.zip', fingerprint: true
+         archiveArtifacts artifacts: 'artefacts/*', fingerprint: true
        }
     }
   }
