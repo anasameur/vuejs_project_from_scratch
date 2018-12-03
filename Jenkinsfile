@@ -21,11 +21,13 @@ pipeline {
       steps {
         bat 'npm run build'
       }
-    }   
+    } 
+    
+    stage ('push artifact') {
+       steps {
+         zip zipFile: 'artefacts/dist.zip', archive: false, dir: 'dist'
+         archiveArtifacts artifacts: 'dist.zip', fingerprint: true
+       }
+    }
   }
-   post {
-      always {
-       archiveArtifacts artifacts: 'dist/*', fingerprint: true
-      }
-   }
 }
