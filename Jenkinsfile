@@ -25,7 +25,7 @@ pipeline {
   }
    post {
       always {
-        zipFile : 'dist/*', archive :true
+       archiveArtifacts artifacts: 'dist/*', fingerprint: true
       }
    }
 }
