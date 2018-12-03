@@ -25,7 +25,7 @@ pipeline {
   }
    post {
       always {
-        archive artifacts: 'dist/*'
+        zipFile : 'dist/*', archive :true
       }
    }
 }
