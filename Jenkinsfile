@@ -29,5 +29,10 @@ pipeline {
          archiveArtifacts artifacts: 'artefacts/*', fingerprint: true
        }
     }
+    stage ('Deploy artifact') {
+       steps { 
+         ansiblePlaybook playbook: 'C:\cygwin64\home\XP5619\gdvsv802playbook.yml'
+       }
+    }
   }
 }
