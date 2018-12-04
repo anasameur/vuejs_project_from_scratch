@@ -1,0 +1,6 @@
+---
+- name: test connexion 
+  hosts: linuxserver
+  tasks:
+    - name: test connexion
+      command: mkdir jenkins_folder
