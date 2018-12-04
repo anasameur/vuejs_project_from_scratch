@@ -11,24 +11,24 @@ pipeline {
       }
     }
 
-   # stage('Dependencies') {
-   #   steps {
-   #     bat 'npm install'
-   #   }
-   #}
+   /* stage('Dependencies') {
+      steps {
+        bat 'npm install'
+      }
+   }
 
-   # stage('Build') {
-   #   steps {
-   #     bat 'npm run build'
-   #   }
-   # } 
+    stage('Build') {
+      steps {
+        bat 'npm run build'
+      }
+    } 
     
-   # stage ('push artifact') {
-   #    steps {
-   #      zip zipFile: 'artefacts/dist.zip', archive: false, dir: 'dist'
-   #      archiveArtifacts artifacts: 'artefacts/*', fingerprint: true
-   #    }
-   # }
+    stage ('push artifact') {
+       steps {
+         zip zipFile: 'artefacts/dist.zip', archive: false, dir: 'dist'
+         archiveArtifacts artifacts: 'artefacts/*', fingerprint: true
+       }
+    }*/
     
     stage ('Deploy artifact') {
        steps { 
