@@ -31,7 +31,7 @@ pipeline {
     }
     stage ('Deploy artifact') {
        steps { 
-         ansiblePlaybook playbook: 'C:\cygwin64\home\XP5619\gdvsv802playbook.yml'
+         ansiblePlaybook playbook: 'C:/cygwin64/home/XP5619/gdvsv802playbook.yml'
        }
     }
   }
