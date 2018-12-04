@@ -32,7 +32,7 @@ pipeline {
     
     stage ('Deploy artifact') {
        steps { 
-         bat 'dir'
+         bat 'dir .'
          ansiblePlaybook playbook: '.\\gdvsv802playbook.yml'
        }
     }
