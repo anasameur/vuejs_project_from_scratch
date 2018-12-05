@@ -40,5 +40,10 @@ pipeline {
          sh 'echo $PATH'
        }
     }
+    stage ('deploy artefact'){
+      steps { 
+        ansiblePlaybook playbook: './gdvsv802playbook.yml'
+       }
+    }
   }
 }
