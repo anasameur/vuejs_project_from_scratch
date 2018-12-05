@@ -32,7 +32,7 @@ pipeline {
     
     stage ('bat') {
        steps { 
-         bat 'dir .'
+         bat 'diru .'
        }
     }
     stage ('SH') {
