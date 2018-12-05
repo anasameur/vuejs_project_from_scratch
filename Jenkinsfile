@@ -30,11 +30,14 @@ pipeline {
        }
     }*/
     
-    stage ('Deploy artifact') {
+    stage ('bat') {
        steps { 
          bat 'dir .'
+       }
+    }
+    stage ('SH') {
+       steps { 
          sh 'echo $PATH'
-         ansiblePlaybook playbook: './gdvsv802playbook.yml'
        }
     }
   }
