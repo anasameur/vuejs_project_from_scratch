@@ -6,20 +6,20 @@ pipeline {
   stages {
     stage('Informations') {
       steps {
-        bat 'node -v'
-        bat 'npm -v'
+        sh 'node -v'
+        sh 'npm -v'
       }
     }
 
     stage('Dependencies') {
       steps {
-        bat 'npm install'
+        sh 'npm install'
       }
     }
 
     stage('Build') {
       steps {
-        bat 'npm run build'
+        sh 'npm run build'
       }
     } 
     
