@@ -13,6 +13,7 @@ pipeline {
 
     stage('Dependencies') {
       steps {
+        sh 'npm config set proxy http://proxy.cofely-fr.gdfsuez.net:8080/ '
         sh 'npm install'
       }
     }
