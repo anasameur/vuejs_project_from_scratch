@@ -1,7 +1,7 @@
 pipeline {
   
   agent any
-  tools {nodejs "node"}
+  tools {nodejs "node_11.3.0"}
 
   stages {
     stage('Informations') {
@@ -11,11 +11,11 @@ pipeline {
       }
     }
 
-   /* stage('Dependencies') {
+    stage('Dependencies') {
       steps {
         bat 'npm install'
       }
-   }
+    }
 
     stage('Build') {
       steps {
@@ -28,9 +28,9 @@ pipeline {
          zip zipFile: 'artefacts/dist.zip', archive: false, dir: 'dist'
          archiveArtifacts artifacts: 'artefacts/*', fingerprint: true
        }
-    }*/
+    }
     
-    stage ('bat') {
+    /*stage ('bat') {
        steps { 
          bat 'diru .'
        }
@@ -44,6 +44,6 @@ pipeline {
       steps { 
         ansiblePlaybook playbook: './gdvsv802playbook.yml'
        }
-    }
+    }*/
   }
 }
